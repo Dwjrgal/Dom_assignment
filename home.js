@@ -24,10 +24,14 @@ btnEl.addEventListener("click", changeBackgroundColor);
 // ----- Add box------//
 
 const addBtn = document.getElementById("add");
+console.log(addBtn);
 
 addBtn.addEventListener("click", function () {
   const newBox = document.createElement("div");
   newBox.className = "box";
-  const parent = document.getElementsByClassName("container")[i];
+  const parent = document.getElementsByClassName("box-container")[0];
   parent.appendChild(newBox);
+  newBox.style.width = "160px";
+  newBox.style.height = "160px";
+  newBox.style.backgroundColor = "teal";
 });
