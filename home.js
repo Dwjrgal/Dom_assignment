@@ -34,4 +34,5 @@ addBtn.addEventListener("click", function () {
   newBox.style.width = "160px";
   newBox.style.height = "160px";
   newBox.style.backgroundColor = "teal";
+  newBox.classList.toggle("box");
 });
