@@ -38,7 +38,28 @@ function pauseSong(){
 }
 
 function prevSong(){
-    songIndex-
+    songIndex--
+
+    if (songIndex <0){
+        songIndex = songs.length -1
+    }
+
+    loadSong(songs[songIndex])
+
+    playSong()
+
+}
+
+function nextSong(){
+    songIndex++
+
+    if (songIndex > songs.lenght-1){
+        songIndex = 0
+    }
+
+    loadSong(songs[songIndex])
+
+    playSong()
 
 }
 
