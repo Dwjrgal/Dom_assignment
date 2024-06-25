@@ -29,10 +29,20 @@ h1 {
   width: 400px;
   background-color: aliceblue;
   border-radius: 12px;
+  display: flex;
+  gap: 20px;
 }
 
 .music-player img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  font-size: 30px;
 }
